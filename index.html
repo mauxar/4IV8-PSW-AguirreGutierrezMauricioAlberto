@@ -44,14 +44,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>-->
+</head>.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+      body {
+        font-family: 'Trebuchet MS', sans-serif;
+      }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera Página en HTML5</title>
+    <title>Currículum</title>
     <link rel="stylesheet" href="./CSS/masterstyle.css">
 </head>
 <body>
@@ -59,62 +65,167 @@
     <div class="main-container" >
 
         <nav>
-            <p>Esta etiqueta sirve para crear barras de navegación </p>
-            <h1>NAV</h1>
+            <h1><p style="text-align:center">CURRÍCULUM</p></h1>
         </nav>
+        
 
+      
+        <style>
+          @keyframes spin3D {
+            from { transform: rotateY(0deg) }
+            to { transform: rotateY(360deg) }
+          }
+          .spinhov3D:hover {
+            animation-name: spin3D;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            /* linear | ease | ease-in | ease-out | ease-in-out */
+            animation-timing-function: ease-in-out;
+          }
+        </style>
+        
         <section>
-            <h2>Esto es una sección</h2>
-            <p>
-                Quiero que hagan un curriculo de ustedes:
-
-                En el cual debe de tener las siguientes secciones:
-
-                Datos Personales:
-                Nombre, Edad, NSS: (inventado) 
-                Correo: del poli
-
-                Escolaridad:
-                Secundaria, Media superior
-                año iniciaron, año en terminaron
-                Asi como los logros principales
-
-                Cursos, Diplomas, Certificaciones
-                titulo, año en que lo obtuvieron y de que es
-
-                Hobbies
-                Videojuegos, juegos de mesa, peliculas, anime
-                manga, comics
-
-                Habilidades(Skill)
-                Creatividad
-                Innovacion
-                Liderazgo
-                Comunicacion acertiva
-                
-
-
-            </p>
             <article>
-                <h3>Sección para crear articulos</h3>
-                <br>
-                <p>Enlaces para las siguientes páginas:</p>
-                <br>
-                <a href="animacion.html" >Página Animada</a>
-                <br>
-                <a href="hovermenu.html" >Página Hover</a>
+                <h1 id="datos">Datos personales</h1>
+                <table>
+                    <tr>
+                      <td>Nombre completo:</td>
+                      <td><td><td><td>
+                      <td>Aguirre Gutiérrez Mauricio Alberto</td></td></td></td></td>
+                    </tr>
+                    <tr>
+                      <td>Fecha de nacimiento:</td>
+                      <td></td><td></td><td></td><td></td>
+                      <td>5 de octubre de 2003 (17 años)</td>
+                    </tr>
+                      <td>Número de Seguridad Social:</td>
+                      <td></td><td></td><td></td><td></td>
+                      <td>2020090386</td>
+                      <tr>
+                        <td>Correo electrónico:</td>
+                        <td></td><td></td><td></td><td></td>
+                        <td>maguirreg@ipn.ipn.mx</td>
+                      </tr>
+                      
+                    
+                  </table>
+            </article>
+            
+            
+            <aside>
+              <h1>Foto:</h1>
+              <table class="tabla" >
+                  <tr>
+                    <td>
+                    <img src="2020090386.jpg" class="spinhov3D" style="float:right" width="250" height="250">
+                  </tr></td>
+                </table>
+          </aside>
 
+
+
+
+            <!--Este es el segundo bloque de recuadros.-->
+            <article>
+                <h1 id="escuela">Escolaridad</h1>
+                <table>
+                    <tr>
+                      <td></td>
+                      <td></td><td></td><td></td><td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Bilingue Heroes<br>(kinder, primaria y secundaria)</td>
+                      <td></td><td></td><td></td><td></td>
+                      <td>CECyT 9 Juan de Dios Bátiz<br>(bachillerato)</td>
+                    </tr>
+                      <td>Desde: 2016-2019</td>
+                      <td></td><td></td><td></td><td></td>
+                      <td>Desde: 2019-presente</td>
+                    <tr>
+                      <td></td>
+                      <td></td><td></td><td></td><td></td>
+                      <td></td>
+                    </tr>
+                  </table>
             </article>
             <aside>
-                <h3>Barra lateral izq o der</h3>
+                <h1>Logros académicos</h1>
+                <table>
+                    <tr>
+                      <td>certificado de secundaria </td>
+                      <td></td><td></td><td></td><td></td>
+                      <td>En 2019</td>
+                    </tr>
+                    <tr>
+                      <td>certificado de primaria</td>
+                      <td></td><td></td><td></td><td></td>
+                      <td>En 2016</td>
+                    </tr>
+                    <td>Entrar a la voca 9</td>
+                    <td></td><td></td><td></td><td></td>
+                    <td>En 2019<br></td>
+                  </tr>
+                  <td>ganar un torneo de football</td>
+                      <td></td><td></td><td></td><td></td>
+                      <td>En 2018<br></td>
+                    </tr>
+                  </table>
             </aside>
+            <!--Este es el tercer bloque.-->
+            <article>
+                <h1 id="docs">Habilidades</h1>
+                <table>
+                    <tr>
+                    <td></td><td></td>
+                    <td>Soy bueno en matematicas</td>
+                    <td></td><td></td><td></td><td></td>
+                    <td>Soy bueno en los deportes</td>
+                  </tr>
+                  <tr>
+                    <td></td><td></td>
+                    <td>No me rindo facilmente</td>
+                    <td></td><td></td><td></td><td></td>
+                    <td>Nivel medio de ingles</td>
+                  </tr>
+                </table>
+            </article>
+            <article>
+                <h1 id="hobby">Pasatiempos</h1>
+                <table>
+                  <tr>
+                    <td></td><td></td>
+                    <td>Ver películas</td>
+                    <td></td><td></td><td></td><td></td>
+                    <td>Jugar football</td>
+                  </tr>
+                  <tr>
+                    <td></td><td></td>
+                    <td>Jugar basketball</td>
+                    <td></td><td></td><td></td><td></td>
+                    <td>El rap</td>
+                  </tr>
+                </table>
+            </article>
+           
+            
         </section>
-
+        <p>Otros trabajos de paginas web:
+          <br> <a href="animacion.html"><i>Mi primera animación</i></a>
+          <br> <a href="hovermenu.html"><i>Página</i> hover</a>
+        </p>
         <footer>
-            <h4>Son los pies de la página</h4>
+         
+            <h4><marquee  behavior="scroll" direction="right" scrollamount="25"><p style="text-align:left">Diseñada por Aguirre Gutiérrez Mauricio Alberto en 2021.</p></marquee></h4>
+         
         </footer>
-
+        
     </div>
     
 </body>
 </html>
+
+
+
+
+
