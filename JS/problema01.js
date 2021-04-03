@@ -1,8 +1,5 @@
-/*
-vamos a crear una funcion que se encargue que
-a partir de una expresion regular se valide la entrada
-de unicamente numeros
-*/
+//Creación de una función encargada de validar
+//la entrada de números mediante una expresión regular.
 
 function validarn(e){
     var teclado = (document.all)?e.keyCode:e.which;
@@ -14,17 +11,28 @@ function validarn(e){
     return patron.test(prueba);
 }
 
-
-function interes(){
+function calculo(){
     var valor = document.formulario.cantidad.value;
     var result = parseInt(valor);
     var interes = result*0.02;
-    var total = result+interes;
+    var p = document.formulario.mes.value;
+    var r = parseInt(p);
+    var mes = interes*document.formulario.mes.value;
+    var total = result+mes;
 
-    document.formulario.sueldoti.value = "$"+total;
-}
+    if (valor == "" || r == "" ) {
+        window.alert("LLene todas las casillas, por favor.");
+    }
+        
+    
+     else {
+         
+     
+        document.formulario.sueldoti.value = total + " $";
+    }}
 
 function borrar(){
-    document.formulario.sueldoti.value = "";
     document.formulario.cantidad.value = "";
+    document.formulario.mes.value = "";
+    document.formulario.sueldoti.value = "";
 }
