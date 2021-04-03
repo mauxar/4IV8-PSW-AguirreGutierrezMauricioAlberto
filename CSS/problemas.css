@@ -7,10 +7,8 @@
 }
 
 html{
-    scroll-behavior: smooth;
     background-color: rgb(47, 75, 128);
-    background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 
 h1{
