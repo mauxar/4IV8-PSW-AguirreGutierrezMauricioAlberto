@@ -68,27 +68,22 @@ th, td {
     padding: 1rem;
 }
 
-.td_sup{
-    align-items: right;
-    justify-content: right;
-    background-color: rgb(117, 147, 245);
-    border-collapse: collapse;
-	border: 3px solid rgb(47, 75, 128);
-}
+
+
 .td_inf{
     align-items: center;
     justify-content: center;
     background-color: rgb(143, 45, 199);
     border-collapse: collapse;
-	border: 3px solid rgb(47, 75, 128);
+	border: 3px solid rgb(13, 13, 14);
 }
 
 .td_su{
     align-items: right;
     justify-content: right;
-    background-color: rgb(117, 147, 245);
+    background-color: rgb(47, 75, 128);
     border-collapse: collapse;
-	border: 3px solid rgb(47, 75, 128);
+	border: 3px solid rgb(8, 8, 8);
     color: #009900;
 }
 .td_in{

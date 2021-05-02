@@ -18,10 +18,7 @@ function problema1(){
 }
 
 
-//si es el principio o es el final de la cadena
-//sieselprincipiooeselfinaldelacadena
-//invertir
-//si es elprincipiooeselfinaldelacadena
+
 
 
 function problema2(){
@@ -66,6 +63,16 @@ function problema2(){
     document.querySelector('#p2-output').textContent =
     'Producto Escalar Minimo : '+ p2_producto;
 
+}
+
+function validarn(e){
+    var teclado = (document.all)?e.keyCode:e.which;
+    if(teclado == 8)return true;
+
+    var patron = /[A-Z a-z ,]/;
+
+    var prueba = String.fromCharCode(teclado);
+    return patron.test(prueba);
 }
 
 function validarentrada(palabra){

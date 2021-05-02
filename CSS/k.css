@@ -1,59 +1,23 @@
-/**{
-    padding:0;
-    margin:0;
-    color:#37FF8B;
-    text-align: center;
-}
-
-html, body{
-    background-color: #781cad;
-}
-
-.main-container{
-    border:4px solid #51D6FF;
-    border-radius: 10px;
-    margin: 2rem;
-    background-color: rgb(50, 50, 50);
-}
-
-nav, section, footer, article, aside{
-    border: 2px solid #8D9EC6;
-    margin: 1rem;
-    border-radius: 10px;
-    padding: 1rem;
-}
-
-article, aside{
-    width:40%;
-    display: inline-block;
-    height: 300px;
-    background-color: #A06B9A;
-
-}
-
-nav, section, footer{
-    background-color: #004E66;
-}*/
 *{
     padding:0;
     margin:0;
-    color:#838486;
+    color: black;
     text-align: center;
 }
 
 html, body{
-    background-color: #0b1111;
+    background-color: darkkhaki;
 }
 
 .main-container{
-    border:4px solid #969799;
+    border:4px solid darkkhaki;
     border-radius: 10px;
     margin: 2rem;
-    background-color: rgb(71, 72, 73);
+    background-color: darkkhaki;
 }
 
 nav, section, footer, article, aside{
-    border: 2px solid #f1f1f1;
+    border: 2px solid darkkhaki;
     margin: 1rem;
     border-radius: 10px;
     padding: 1rem;
@@ -63,12 +27,12 @@ article, aside{
     width:40%;
     display: inline-block;
     height: 300px;
-    background-color: #f7ecaf71;
+    background-color: darkkhaki;
 
 }
 
 nav, section, footer{
-    background-color: #494747;
+    background-color: darkkhaki;
 }
 
 th, td{
@@ -144,4 +108,3 @@ table{
   .menu[data-animation="to-top"] a:hover span:first-child {
     transform: translateY(-100%);
   }
-  
